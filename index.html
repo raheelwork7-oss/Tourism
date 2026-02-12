@@ -1,0 +1,373 @@
+\<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voyago | Travel & Tourism</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/tourism.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    
+<!-- -------- - Header Section --------- -->
+
+<header>
+    <div class="logo">
+            <a href="index.html"><img src="./images/tourism.png" alt="Voyago Logo"></a>
+    </div>
+
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+        <span>☰</span>
+    </label>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#packages">Packages</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+        <button class="bn">
+            <a href="signup.html">Book Ticket</a>
+            <div class="arrow-wrapper"><div class="arrow"></div></div>
+        </button>
+    </nav>
+</header>
+
+<!-- ---------- - Hero Section content --------- -->
+
+<div class="containerr" data-aos="fade-up-left">
+    <div class="content">
+        <section id="home" class="home-section">
+            <h1>Explore the World, Your Way</h1>
+            <p>Your ultimate travel companion. Explore the world with us!</p>
+            <button class="bu">
+                <a href="#packages">Explore packages</a>
+                <div class="arrow-wrapper"><div class="arrow"></div></div>
+            </button>
+        </section>
+    </div>
+</div>
+
+<!-- -------- js for entering page  --------- -->
+
+<div id="sidePanel" class="side-panel">
+    <div class="panel-content">
+        <span class="close-btn">&times;</span>
+        <h3>Get Exclusive Deals! ✈️</h3>
+        <p>Enter your details to unlock premium packages.</p>
+        <div class="input-group">
+            <input type="text" id="uName" placeholder="Full Name">
+            <input type="email" id="uEmail" placeholder="Email Address">
+            <button id="saveData">Unlock Now</button>
+        </div>
+    </div>
+</div>
+
+<!-- --------- Explore the beauti of world --------- -->
+
+<section class="destination" >
+
+    <div class="con">
+        <h1>Explore the Beauty of the World</h1>
+    </div>
+
+    <section id="packages" class="modern-cards-section">
+    <div class="cards-grid">
+
+        <div class="modern-card" >
+            <img src="https://i.pinimg.com/1200x/f7/7c/69/f77c69b13645ffdb488c68adf1e78710.jpg" alt="Dubai Package">
+            <div class="card-body">
+                <h3>Dubai City Lights</h3>
+                <p>Experience the dazzling nightlife and iconic skyscrapers.</p>
+                <div class="card-footer">
+                    <span class="price">$1200 / person</span>
+                    <button class="action-btn">View Details</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="modern-card">
+            <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=1000&auto=format&fit=crop" alt="Paris Package">
+            <div class="card-body">
+                <h3>Romantic Paris Getaway</h3>
+                <p>Enjoy the charm of the Eiffel Tower and Seine River cruises.</p>
+                <div class="card-footer">
+                    <span class="price">$950 / person</span>
+                    <button class="action-btn">View Details</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="modern-card">
+            <img src="https://i.pinimg.com/736x/7b/c7/cc/7bc7cc93c780283bafe2fce40c03a6d5.jpg" alt="Maldives Package">
+            <div class="card-body">
+                <h3>Maldives Beach Escape</h3>
+                <p>Relax on pristine beaches and clear turquoise waters.</p>
+                <div class="card-footer">
+                    <span class="price">$1500 / person</span>
+                    <button class="action-btn">View Details</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="modern-card">
+            <img src="https://i.pinimg.com/1200x/1b/f7/90/1bf79046f379f5156c9346ef295f0a20.jpg" alt="Tokyo Package">
+            <div class="card-body">
+                <h3>Tokyo Urban Adventure</h3>
+                <p>Explore vibrant city life, ancient temples, and delicious cuisine.</p>
+                <div class="card-footer">
+                    <span class="price">$1100 / person</span>
+                    <button class="action-btn">View Details</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="modern-card">
+            <img src="https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?q=80&w=1000&auto=format&fit=crop" alt="Switzerland Package">
+            <div class="card-body">
+                <h3>Swiss Alps Magic</h3>
+                <p>Ski through the snow-capped mountains and enjoy cozy cabin stays.</p>
+                <div class="card-footer">
+                    <span class="price">$1800 / person</span>
+                    <button class="action-btn">View Details</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="modern-card">
+            <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?q=80&w=1000&auto=format&fit=crop" alt="London Package">
+            <div class="card-body">
+                <h3>Historic London Tour</h3>
+                <p>Visit the Big Ben, London Eye, and explore the royal heritage.</p>
+                <div class="card-footer">
+                    <span class="price">$1050 / person</span>
+                    <button class="action-btn">View Details</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+</section>
+
+
+<!-- --------- about section --------- -->
+
+<section id="about" class="about-section">
+    <h1>About Us</h1>
+    <div class="about-container">
+        <div class="about-image">
+            <div class="image-box" >
+                <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?q=80&w=1000&auto=format&fit=crop" alt="Our Journey">
+                <div class="experience-badge">
+                    <span>10+</span>
+                    <p>Years Experience</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-content">
+            <h4 class="sub-title">Who We Are</h4>
+            <h2>We Are Professional <span>Travel Agents</span> Since 2014</h2>
+            <p>Voyago is your ultimate gateway to the world. We don't just book trips; we create memories that last a lifetime. Our team of experts ensures every detail is perfect, from luxury stays to off-beat adventures.</p>
+
+            <button class="bn">Learn More</button>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- --------- services section --------- -->
+
+
+<section class="tour-serv-wrapper" id="services">
+    <div class="tour-serv-header">
+        <span class="tour-serv-badge">Premium Travel Solutions</span>
+        <h2 class="tour-serv-main-title">Unforgettable Journeys</h2>
+        <p class="tour-serv-description">Explore the world's most beautiful destinations with our premium, all-inclusive travel services.</p>
+    </div>
+
+    <div class="tour-serv-container-box">
+        <div class="tour-serv-grid">
+            
+            <div class="tour-serv-card" onclick="handleServiceClick(this)">
+                <div class="tour-serv-img-box" style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=500&q=80');">
+                </div>
+                <div class="tour-serv-content">
+                    <div class="tour-serv-icon-circle">
+                        <i class="fas fa-umbrella-beach"></i>
+                    </div>
+                    <h3>Tropical Getaways</h3>
+                    <p>Escape to paradise. We offer exclusive access to private beaches and luxury island resorts.</p>
+                    <button class="tour-serv-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="tour-serv-card" onclick="handleServiceClick(this)">
+                <div class="tour-serv-img-box" style="background-image: url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=500&q=80');">
+                </div>
+                <div class="tour-serv-content">
+                    <div class="tour-serv-icon-circle">
+                        <i class="fas fa-hiking"></i>
+                    </div>
+                    <h3>Mountain Expeditions</h3>
+                    <p>For the thrill-seekers. Guided trekking tours through the world's most iconic mountain ranges.</p>
+                    <button class="tour-serv-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="tour-serv-card" onclick="handleServiceClick(this)">
+                <div class="tour-serv-img-box" style="background-image: url('https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=500&q=80');">
+                </div>
+                <div class="tour-serv-content">
+                    <div class="tour-serv-icon-circle">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3>Custom Itineraries</h3>
+                    <p>Your trip, your way. Our experts design personalized travel plans tailored to your preferences.</p>
+                    <button class="tour-serv-btn">View Details</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ----------- conact section --------- -->
+
+
+<section class="contact-v2-section" id="contact">
+    <div class="contact-v2-wrapper">
+        <div class="contact-v2-grid">
+            
+            <div class="contact-v2-details">
+                <h4 class="contact-v2-subtitle">Contact Us</h4>
+                <h2 class="contact-v2-title">Ready to Start Your Journey?</h2>
+                <p class="contact-v2-text">Drop us a message and our travel experts will craft the perfect itinerary for you.</p>
+                
+                <div class="contact-v2-info-cards">
+                    <div class="contact-v2-item">
+                        <div class="contact-v2-icon-box"><i class="fas fa-phone-alt"></i></div>
+                        <div class="contact-v2-item-text">
+                            <span>Call Center</span>
+                            <strong>+1 (800) 123-4567</strong>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-v2-item">
+                        <div class="contact-v2-icon-box"><i class="fas fa-envelope-open-text"></i></div>
+                        <div class="contact-v2-item-text">
+                            <span>Email Support</span>
+                            <strong>booking@voyago.com</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-v2-form-container">
+                <form id="contactV2Form" class="contact-v2-main-form">
+                    <div class="contact-v2-input-group">
+                        <input type="text" id="v2-name" placeholder="Full Name" required>
+                    </div>
+                    <div class="contact-v2-input-group">
+                        <input type="email" id="v2-email" placeholder="Email Address" required>
+                    </div>
+                    <div class="contact-v2-input-group">
+                        <select id="v2-service" required>
+                            <option value="" disabled selected>Select Service</option>
+                            <option value="flight">Flight Booking</option>
+                            <option value="hotel">Hotel Reservation</option>
+                            <option value="package">Holiday Package</option>
+                        </select>
+                    </div>
+                    <div class="contact-v2-input-group">
+                        <textarea id="v2-message" placeholder="How can we help you?" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="contact-v2-submit-btn">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- -------- footer section --------- -->
+
+
+<footer class="footer-v3-area">
+    <div class="footer-v3-container">
+        <div class="footer-v3-grid">
+            
+            <div class="footer-v3-col footer-v3-about">
+                <h3 class="footer-v3-logo">Travel with <span>Voyago</span></h3>
+                <p class="footer-v3-desc">
+                    Connecting you to the world's most breathtaking destinations since 2010. Your journey is our passion.
+                </p>
+                <div class="footer-v3-socials">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-v3-col">
+                <h4 class="footer-v3-heading">Quick Links</h4>
+                <ul class="footer-v3-links">
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Popular Tours</a></li>
+                    <li><a href="#">Special Offers</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-v3-col">
+                <h4 class="footer-v3-heading">Support</h4>
+                <ul class="footer-v3-contact">
+                    <li><i class="fas fa-headset"></i> 24/7 Customer Care</li>
+                    <li><i class="fas fa-shield-alt"></i> Safe & Secure Payments</li>
+                    <li><i class="fas fa-file-invoice-dollar"></i> Refund Policy</li>
+                </ul>
+            </div>
+
+            <div class="footer-v3-col footer-v3-newsletter">
+                <h4 class="footer-v3-heading">Newsletter</h4>
+                <p>Subscribe to get exclusive travel deals.</p>
+                <form class="footer-v3-form" id="footerNewsletter">
+                    <input type="email" placeholder="Your Email Address" required>
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+
+        </div>
+
+        <div class="footer-v3-bottom">
+            <p>&copy; 2026 Travel Explorer. All rights reserved.</p>
+            <div class="footer-v3-cards">
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-mastercard"></i>
+                <i class="fab fa-cc-paypal"></i>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+<script src="app.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</html>

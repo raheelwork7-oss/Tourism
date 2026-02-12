@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Your Account | Travel Explorer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="shortcut icon" href="./images/tourism.png" type="image/x-icon">
+    <style>
+
+
+/* <!-- -------- footer section --------- --> */
+
+
+.footer-v3-area {
+    background-color: #0c1228; /* Dark Navy for contrast */
+    color: #ffffff;
+    padding: 80px 20px 30px;
+    font-family: 'Poppins', sans-serif;
+}
+.footer-v3-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.footer-v3-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+.footer-v3-logo {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.footer-v3-logo span {
+    color: rgb(57, 57, 248); /* Your specific blue */
+}
+.footer-v3-desc {
+    color: #adb5bd;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+.footer-v3-socials a {
+    display: inline-flex;
+    width: 38px;
+    height: 38px;
+    background: rgba(255, 255, 255, 0.05);
+    color: #fff;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+.footer-v3-socials a:hover {
+    background: rgb(57, 57, 248);
+    transform: translateY(-3px);
+}
+.footer-v3-heading {
+    font-size: 18px;
+    margin-bottom: 25px;
+    position: relative;
+    padding-bottom: 10px;
+}
+.footer-v3-heading::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 30px;
+    height: 2px;
+    background: rgb(57, 57, 248);
+}
+.footer-v3-links, .footer-v3-contact {
+    list-style: none;
+    padding: 0;
+}
+.footer-v3-links li, .footer-v3-contact li {
+    margin-bottom: 15px;
+    color: #adb5bd;
+    font-size: 14px;
+}
+.footer-v3-links a {
+    color: #adb5bd;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.footer-v3-links a:hover {
+    color: rgb(57, 57, 248);
+    padding-left: 5px;
+}
+.footer-v3-contact i {
+    color: rgb(57, 57, 248);
+    margin-right: 10px;
+}
+/* Newsletter Styling */
+.footer-v3-form {
+    display: flex;
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 5px;
+    border-radius: 12px;
+}
+.footer-v3-form input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    padding: 10px 15px;
+    color: #fff;
+    outline: none;
+}
+.footer-v3-form button {
+    background: rgb(57, 57, 248);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.footer-v3-form button:hover {
+    background: #2a2af5;
+}
+/* Bottom Footer */
+.footer-v3-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #6c757d;
+    font-size: 13px;
+}
+.footer-v3-cards {
+    font-size: 24px;
+    display: flex;
+    gap: 15px;
+}
+@media (max-width: 992px) {
+    .footer-v3-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 600px) {
+    .footer-v3-grid { grid-template-columns: 1fr; }
+    .footer-v3-bottom { flex-direction: column; gap: 20px; text-align: center; }
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    overflow-x: hidden;
+}
+html{
+    scroll-behavior: smooth;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  height: 80px;
+  padding: 0 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+.logo img {
+    width: 150px;
+    border-radius: 50%;
+    display: block;
+    margin-top: 10px;
+    margin-left: -10px;
+}
+nav {
+    display: flex;
+    align-items: center;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    margin-right: 30px;
+}
+nav ul li {
+    margin: 0 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    color: rgb(57, 57, 248);
+    transition: 0.5s ease;
+}
+nav ul li a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.3s ease;
+}
+nav ul li a:hover::after {
+    width: 100%;
+    background-color: rgb(57, 57, 248);
+}
+.bn {
+    --primary-color: rgb(57, 57, 248);
+    --secondary-color: #fff;
+    --hover-color: #111;
+    --arrow-width: 10px;
+    --arrow-stroke: 2px;
+    border: 0;
+    border-radius: 20px;
+    color: var(--secondary-color);
+    padding: 1em 1.8em;
+    background: var(--primary-color);
+    display: flex;
+    align-items: center;
+    gap: 0.6em;
+    font-weight: bold;
+    cursor: pointer;
+}
+.bn a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+.bn:hover {
+    background: var(--hover-color);
+    transition: 0.3s ease;
+}
+.containerr {
+    width: 100%;
+    height: calc(100vh - 80px); /* Adjust for header height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+}
+.content {
+    text-align: center;
+}
+.content h1 {
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.content p {
+    font-size: 20px;
+    color: white;
+    margin: 20px 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+.bu {
+    --primary-color: #ffff;
+    --secondary-color: rgb(57, 57, 248);
+    --hover-color: #eceff2;
+    --arrow-width: 10px;
+    --arrow-stroke: 2px;
+    border: 0;
+    border-radius: 50px;
+    color: var(--secondary-color);
+    padding: 1em 1.8em;
+    background: var(--primary-color);
+    display: flex;
+    align-items: center;
+    gap: 0.6em;
+    font-weight: bold;
+    margin: 30px auto 0; /* Horizontal auto for perfect center */
+    cursor: pointer;
+}
+.bu a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+.bu:hover {
+    background: var(--hover-color);
+    transition: 0.3s ease;
+}
+.arrow-wrapper { display: flex; justify-content: center; align-items: center; }
+.arrow { 
+    margin-top: 1px; width: var(--arrow-width); height: var(--arrow-stroke); 
+    background: currentColor; position: relative; transition: 0.2s; 
+}
+.arrow::before {
+    content: ""; position: absolute; border: solid currentColor;
+    border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+    display: inline-block; top: -3px; right: 3px; padding: 3px; transform: rotate(-45deg);
+}
+#check { display: none; }
+.checkbtn { font-size: 30px; color: #333; cursor: pointer; display: none; }
+@media (max-width: 1024px) {
+    header { padding: 0 20px; }
+    .checkbtn { display: block; }
+    
+    nav {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: white;
+        top: 80px;
+        left: -100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 50px;
+        transition: all 0.5s;
+    }
+
+    nav ul { flex-direction: column; margin-right: 0; }
+    nav ul li { margin: 15px 0; }
+    
+    #check:checked ~ nav { left: 0; }
+    .bn { margin-top: 20px; }
+}
+@media (max-width: 600px) {
+    .content h1 { font-size: 35px; }
+    .content p { font-size: 16px; }
+}
+
+
+/* Side Panel Styling */
+
+
+.side-panel {
+    position: fixed;
+    right: -400px; /* Shuru mein screen se bahar */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 350px;
+    background: white;
+    box-shadow: -5px 0 25px rgba(0,0,0,0.2);
+    border-radius: 20px 0 0 20px;
+    transition: 0.5s ease-in-out;
+    z-index: 2000;
+    padding: 30px;
+}
+.side-panel.active {
+    right: 0; /* Slide in effect */
+}
+.panel-content h3 {
+    font-family: sans-serif;
+    color: #333;
+    margin-bottom: 10px;
+}
+.panel-content p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+}
+.input-group button {
+    width: 100%;
+    padding: 12px;
+    background: rgb(57, 57, 248);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.input-group button:hover {
+    background: #111;
+}
+.close-btn {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #999;
+}
+
+
+
+
+        /* --------- signup page --------- */ 
+
+
+:root {
+    --primary-blue: rgb(57, 57, 248);
+    --soft-blue: rgba(57, 57, 248, 0.05);
+    --text-main: #1e293b;
+}
+.booking-v5-section {
+    padding: 40px 20px;
+    background: #f8fafc;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    margin-top: 80px;
+}
+.booking-v5-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.booking-v5-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 24px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.06);
+    border: 1px solid #f1f5f9;
+}
+/* Tabs Styling */
+.booking-v5-tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #f1f5f9;
+    padding-bottom: 15px;
+}
+.booking-v5-tab {
+    padding: 10px 24px;
+    border: none;
+    background: transparent;
+    color: #64748b;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+.booking-v5-tab.active {
+    background: var(--soft-blue);
+    color: var(--primary-blue);
+}
+/* Form Grid */
+.booking-v5-grid {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr 0.8fr 0.8fr auto;
+    align-items: flex-end;
+    gap: 20px;
+}
+.booking-v5-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.booking-v5-group label {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--text-main);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.booking-v5-group input, 
+.booking-v5-group select {
+    padding: 14px 16px;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+    background: #fcfdfe;
+}
+.booking-v5-group input:focus {
+    border-color: var(--primary-blue);
+    background: #fff;
+}
+/* Swap Icon Animation */
+.booking-v5-swap {
+    width: 40px;
+    height: 40px;
+    background: #f1f5f9;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-blue);
+    cursor: pointer;
+    margin-bottom: 5px;
+    transition: 0.3s;
+}
+.booking-v5-swap:hover {
+    background: var(--primary-blue);
+    color: #fff;
+    transform: rotate(180deg);
+}
+/* Submit Button */
+.booking-v5-btn {
+    background: var(--primary-blue);
+    color: #fff;
+    border: none;
+    padding: 16px 30px;
+    border-radius: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
+}
+.booking-v5-btn:hover {
+    box-shadow: 0 10px 20px rgba(57, 57, 248, 0.3);
+    transform: translateY(-2px);
+}
+@media (max-width: 1024px) {
+    .booking-v5-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .booking-v5-swap { display: none; }
+    .booking-v5-action { grid-column: span 2; }
+}
+    </style>
+</head>
+<body class="auth-v4-body">
+
+<header>
+    <div class="logo">
+            <a href="index.html"><img src="./images/tourism.png" alt="Voyago Logo"></a>
+    </div>
+
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+        <span>☰</span>
+    </label>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#packages">Packages</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+        <button class="bn">
+            <a href="signup.html">Book Ticket</a>
+            <div class="arrow-wrapper"><div class="arrow"></div></div>
+        </button>
+    </nav>
+</header>
+
+
+    <section class="booking-v5-section">
+    <div class="booking-v5-container">
+        <div class="booking-v5-card">
+            <div class="booking-v5-tabs">
+                <button class="booking-v5-tab active" onclick="switchTab(this)">Flight</button>
+                <button class="booking-v5-tab" onclick="switchTab(this)">Hotel</button>
+                <button class="booking-v5-tab" onclick="switchTab(this)">Car Rental</button>
+            </div>
+
+            <form id="bookingFormV5" class="booking-v5-form">
+                <div class="booking-v5-grid">
+                    
+                    <div class="booking-v5-group">
+                        <label><i class="fas fa-map-marker-alt"></i> From</label>
+                        <input type="text" placeholder="Departure City" required>
+                    </div>
+
+                    <div class="booking-v5-swap">
+                        <i class="fas fa-exchange-alt"></i>
+                    </div>
+
+                    <div class="booking-v5-group">
+                        <label><i class="fas fa-plane-arrival"></i> To</label>
+                        <input type="text" placeholder="Arrival City" required>
+                    </div>
+
+                    <div class="booking-v5-group">
+                        <label><i class="far fa-calendar-alt"></i> Date</label>
+                        <input type="date" required>
+                    </div>
+
+                    <div class="booking-v5-group">
+                        <label><i class="fas fa-users"></i> Travelers</label>
+                        <select>
+                            <option>1 Adult, Economy</option>
+                            <option>2 Adults, Economy</option>
+                            <option>1 Adult, Business</option>
+                            <option>Family, Economy</option>
+                        </select>
+                    </div>
+
+                    <div class="booking-v5-action">
+                        <button type="submit" class="booking-v5-btn">
+                            Search Flights <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+<!-- -------- footer section --------- -->
+
+
+<footer class="footer-v3-area">
+    <div class="footer-v3-container">
+        <div class="footer-v3-grid">
+            
+            <div class="footer-v3-col footer-v3-about">
+                <h3 class="footer-v3-logo">Travel with <span>Voyago</span></h3>
+                <p class="footer-v3-desc">
+                    Connecting you to the world's most breathtaking destinations since 2010. Your journey is our passion.
+                </p>
+                <div class="footer-v3-socials">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-v3-col">
+                <h4 class="footer-v3-heading">Quick Links</h4>
+                <ul class="footer-v3-links">
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Popular Tours</a></li>
+                    <li><a href="#">Special Offers</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-v3-col">
+                <h4 class="footer-v3-heading">Support</h4>
+                <ul class="footer-v3-contact">
+                    <li><i class="fas fa-headset"></i> 24/7 Customer Care</li>
+                    <li><i class="fas fa-shield-alt"></i> Safe & Secure Payments</li>
+                    <li><i class="fas fa-file-invoice-dollar"></i> Refund Policy</li>
+                </ul>
+            </div>
+
+            <div class="footer-v3-col footer-v3-newsletter">
+                <h4 class="footer-v3-heading">Newsletter</h4>
+                <p>Subscribe to get exclusive travel deals.</p>
+                <form class="footer-v3-form" id="footerNewsletter">
+                    <input type="email" placeholder="Your Email Address" required>
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+
+        </div>
+
+        <div class="footer-v3-bottom">
+            <p>&copy; 2026 Travel Explorer. All rights reserved.</p>
+            <div class="footer-v3-cards">
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-mastercard"></i>
+                <i class="fab fa-cc-paypal"></i>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
