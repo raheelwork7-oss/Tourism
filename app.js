@@ -162,3 +162,18 @@ document.getElementById('bookingFormV5').addEventListener('submit', function(e) 
         btn.style.opacity = '1';
     }, 1500);
 });
+
+
+
+
+window.addEventListener('load', () => {
+    const preloader = document.getElementById('voyago-preloader');
+    setTimeout(() => {
+        preloader.classList.add('hidden');
+    }, 2000); // 2 seconds tak dikhega
+});
+
+
+
+
+    

@@ -828,3 +828,100 @@ nav ul li a:hover::after {
 }
 
 
+/* ----------- loader ------------ */
+
+
+/* ====== PRELOADER CONTAINER ====== */
+#voyago-preloader {
+    position: fixed;
+    inset: 0;
+    /* Animated Gradient Background */
+    background: linear-gradient(-45deg, #f8faff, #eef2ff, #ffffff, #e0e7ff);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.8s;
+}
+
+/* Hide Class */
+#voyago-preloader.hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+/* ====== LOGO ====== */
+.loader-logo {
+    width: 170px;
+    margin-bottom: 25px;
+    /* Professional Floating Animation */
+    animation: float 3s ease-in-out infinite, fadeIn 1s ease-out forwards;
+    filter: drop-shadow(0 10px 15px rgba(37, 71, 189, 0.1));
+}
+
+/* ====== SPINNER ====== */
+.loading-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    /* Double Border Effect for Premium Look */
+    border: 3px solid rgba(37, 71, 189, 0.1);
+    border-top: 3px solid #2547bd;
+    border-right: 3px solid #2547bd;
+    position: relative;
+    animation: spin 0.8s cubic-bezier(0.5, 0.1, 0.4, 0.9) infinite;
+    margin-bottom: 18px;
+}
+
+/* Pulse Glow around Spinner */
+.loading-circle::after {
+    content: '';
+    position: absolute;
+    inset: -10px;
+    border-radius: 50%;
+    background: rgba(37, 71, 189, 0.05);
+    animation: pulse 2s ease-out infinite;
+}
+
+/* ====== TEXT ====== */
+.loading-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #2547bd;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: textShimmer 2s infinite alternate, fadeInUp 1s ease forwards;
+}
+
+/* ====== PROFESSIONAL ANIMATIONS ====== */
+
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+@keyframes textShimmer {
+    from { opacity: 0.5; filter: blur(0.5px); }
+    to { opacity: 1; filter: blur(0); }
+}
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@keyframes pulse {
+    0% { transform: scale(0.8); opacity: 1; }
+    100% { transform: scale(1.5); opacity: 0; }
+}
